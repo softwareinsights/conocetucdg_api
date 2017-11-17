@@ -1,0 +1,44 @@
+{
+  "name": "Usuario",
+  "plural": "usuarios",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "token": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "number"
+    },
+    "puesto": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eventos": {
+      "type": "hasMany",
+      "model": "Evento",
+      "foreignKey": ""
+    },
+    "lugars": {
+      "type": "hasMany",
+      "model": "Lugar",
+      "foreignKey": ""
+    },
+    "comentarios": {
+      "type": "hasMany",
+      "model": "Comentario",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

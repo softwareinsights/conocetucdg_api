@@ -1,0 +1,49 @@
+{
+  "name": "Comentario",
+  "plural": "comentarios",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "comentario": {
+      "type": "string",
+      "required": true
+    },
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "hora": {
+      "type": "string",
+      "required": true
+    },
+    "like": {
+      "type": "number"
+    },
+    "dislike": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "evento": {
+      "type": "belongsTo",
+      "model": "Evento",
+      "foreignKey": ""
+    },
+    "lugar": {
+      "type": "belongsTo",
+      "model": "Lugar",
+      "foreignKey": ""
+    },
+    "usuario": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,54 @@
+{
+  "name": "Lugar",
+  "plural": "lugares",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "voto": {
+      "type": "number"
+    },
+    "foto": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string",
+      "required": true
+    },
+    "lng": {
+      "type": "string",
+      "required": true
+    },
+    "recomendado": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "comentarios": {
+      "type": "hasMany",
+      "model": "Comentario",
+      "foreignKey": ""
+    },
+    "usuario": {
+      "type": "belongsTo",
+      "model": "Usuario",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
