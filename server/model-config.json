@@ -14,41 +14,41 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "Lugar": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "Evento": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "Comentario": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   },
   "Usuario": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": true
   }
 }
