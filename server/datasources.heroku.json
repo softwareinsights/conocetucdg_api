@@ -3,16 +3,6 @@
     "name": "db",
     "connector": "memory"
   },
-  "mysql": {
-    "host": "http://www.aidihosting.com",
-    "port": 3306,
-    "url": "",
-    "database": "cesarweb_conocetucdg",
-    "password": "123ab",
-    "name": "mysql",
-    "user": "cesarweb_conoce",
-    "connector": "mysql"
-  },
   "mongodb": {
     "host": "ds133166.mlab.com",
     "port": 33166,
