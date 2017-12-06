@@ -4,13 +4,23 @@
     "connector": "memory"
   },
   "mysql": {
-    "host": "http://www.aidihosting.com",
+    "host": "localhost",
     "port": 3306,
     "url": "",
-    "database": "cesarweb_conocetucdg",
-    "password": "123ab",
+    "database": "conocetucdg",
+    "password": "",
     "name": "mysql",
-    "user": "cesarweb_conoce",
+    "user": "root",
     "connector": "mysql"
+  },
+  "mongodb": {
+    "host": "ds133166.mlab.com",
+    "port": 33166,
+    "url": "",
+    "database": "conocetucdg",
+    "password": "123456",
+    "name": "mongodb",
+    "user": "root",
+    "connector": "mongodb"
   }
 }
